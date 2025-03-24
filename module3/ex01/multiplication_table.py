@@ -2,7 +2,11 @@
 enter = input("Enter a number\n")
 i = 0
 i = int(i)
-enter = int(enter)
-while i <= enter:
-    print(str(i) + " x 8" + " = ", i * 8)
-    i = i + 1
+try:
+    enter = int(enter)
+    while i <= 9:
+        result = int(i * enter)
+        print(str(i) + " x " + str(enter) + " = ", result)
+        i = i + 1
+except:
+    print("invalid input")
