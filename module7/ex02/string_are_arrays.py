@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 import sys
 try:
     i = 0
@@ -18,4 +18,4 @@ try:
     else:
         print("none")
 except:
-    print("invalid input")
+    print("Invalied Argments", file= sys.stderr)

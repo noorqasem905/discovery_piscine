@@ -11,8 +11,9 @@ def enlarge(st):
     print(st[x], end = "")
     i = 8 - len(st)
     while(i > 0):
-        print('z', end = "")
+        print('Z', end = "")
         i -= 1
+    print()
 try:
     i = 1
     while i < len(sys.argv):
@@ -21,8 +22,7 @@ try:
         elif len(sys.argv[i]) < 8:
             enlarge(sys.argv[i])
         else:
-            print(st)
+            print(sys.argv[i])
         i += 1
-        print()
 except Exception as e:
     print(f"ERROR: {e}")

@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-enter = input("What you gotta say? : ")
+
 try:
+enter = input("What you gotta say? : ")
     while 1:
         if enter == "STOP":
             break

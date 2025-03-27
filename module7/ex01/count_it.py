@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 import sys
 try:
     if len(sys.argv) != 1:
@@ -8,4 +8,4 @@ try:
     else:
         print("none")
 except:
-    print("invalid input")
+    print("Invalied Argments", file= sys.stderr)

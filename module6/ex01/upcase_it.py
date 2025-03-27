@@ -1,7 +1,10 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 import sys
-if len(sys.argv) == int(2):
-    st = str(sys.argv[1])
-    print(st.upper())
-else:
-    print("none")
+try:
+    if len(sys.argv) == int(2):
+        st = str(sys.argv[1])
+        print(st.upper())
+    else:
+        print("none")
+except ImportError:
+    print("ERROR", file=sys.stderr)

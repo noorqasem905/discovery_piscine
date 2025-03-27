@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 import sys
 try:
         i = 0
@@ -8,10 +8,8 @@ try:
                 i = x.rfind("ism")
                 if i == -1 or len(x) - 3 > i:
                     print(x.strip() + "ism")
-                else:
-                    print(x.strip())
         else:
             print("none")
 
 except:
-    print("invalid input")
+    print("Invalied Argments", file= sys.stderr)

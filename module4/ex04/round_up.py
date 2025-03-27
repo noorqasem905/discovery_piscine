@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-enter = input("Give me a number: ")
 try:
+enter = input("Give me a number: ")
     enter = float(enter)
     if enter != int(enter) and enter > 0:
         enter = int(enter) + 1

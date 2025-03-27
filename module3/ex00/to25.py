@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-enter = input("Enter a number less than 25\n")
-enter = int(enter)
 try:
+enter = input("Enter a number less than 25\n")
+    enter = int(enter)
+
     if enter > 25:
         print("Error")
     else:
